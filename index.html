@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .form-container {
+    max-width: 400px;
+    margin: 20px;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  #create-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  #update-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  table {
+
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <form>
+    <input class="form-input" id="name" type="text" placeholder="name">
+    <input class="form-input" id="quantityPerUnit" type="text" placeholder="quantityPerUnit">
+    <input class="form-input" id="unitPrice" type="text" placeholder="unitPrice">
+    <button id="create-button" type="submit">Create</button>
+    <button id="update-button" type="button">Update</button>
+  </form>
+</div>
+<table id="data-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>quantityPerUnit</th>
+        <th>unitPrice</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+    </tbody>
+  </table>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./products.js"></script>
+</body>
+</html>
